@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <style>
+
+    
+
+.header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background: #F5F5F5;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+    }
+
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo img {
+      width: 60px;
+    }
+
+    .logo-text {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .logo-text a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      position: relative;
+      padding: 5px;
+    }
+
+    .menu-item {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: navy;
+      color: white;
+      padding: 15px;
+      
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 150px;
+      height:100px;
+    }
+
+    .dropdown a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+
+    .dropdown a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+
+    .extra-links {
+      display: flex;
+      gap: 20px;
+      padding-left: 850px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      padding-left: 20px;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Mobile view */
+    @media (max-width: 768px) {
+      .logo-text, .extra-links, .icons {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+
+     
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y:auto;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .mobile-menu.active {
+        right: 0;
+      }
+
+      .mobile-menu .close-btn {
+        font-size: 24px;
+        text-align: right;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      .mobile-menu .menu-item {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        display:inline-block
+      }
+
+      .mobile-menu .dropdown {
+        display: none;
+        background: navy;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      
+
+      .mobile-menu .menu-item .dropdown {
+        display:none;
+      }
+
+      .mobile-menu .dropdown a {
+        display: block;
+        color: white;
+        padding: 8px 0;
+        text-decoration: none;
+      }
+
+      .mobile-menu .dropdown a:hover {
+        text-decoration: underline;
+      }
+
+      .logo-section img {
+        display: block;
+        width: 60px;
+        margin-bottom: 20px;
+      }
+    }
+
+   
+
+
+
+
+@media (min-width: 769px) {
+  .menu-icon,
+  .mobile-menu {
+    display: none;
+  }
+}
+
+
+    
+   
+   .hero {
+      max-height: 100px;
+      padding: 100px 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url('background1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+
+    .hero h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: "Ubuntu", serif;
+      font-weight: 400;
+      font-style: normal;
+}
+    
+
+    .hero p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      padding: 0 20px;
+      max-width: 800px;
+      font-family: "Ubuntu", serif;
+      font-weight: 500;
+      font-style: normal;
+      color:white;
+    }
+    .animate {
+      animation: fadeIn 2s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Tablet */
+    @media (min-width: 600px) {
+      .hero {
+        padding: 150px 30px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+      }
+
+      .hero p {
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+        max-width: 900px;
+      }
+    }
+
+    /* Desktop  */
+    @media (min-width: 1024px) {
+      .hero {
+        padding: 200px 50px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
+
+      .hero p {
+        font-size: clamp(1.5rem, 3vw, 1.8rem);
+        max-width: 1000px;
+      }
+    }
+        
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 900px;
+            margin: 40px auto;
+            height: auto;
+            padding: 40px 20px;
+        }
+
+       
+        .custom-card {
+            flex: 1 1 calc(33.33% - 20px);
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s ease-in-out;
+            height: 400px;
+            position: relative;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.05);
+        }
+
+        .custom-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .custom-card-body {
+            padding: 20px;
+        }
+
+        .custom-card-body h5 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-family: "Ubuntu", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .custom-card-body p {
+            font-size: 0.9rem;
+            color: grey;
+            line-height: 1.4;
+            font-family: "Ubuntu", serif;
+            font-weight: 300;
+            font-style: normal;
+            font-family: "Ubuntu", serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #555;
+
+        }
+
+        .custom-card-body a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            font-family: "Ubuntu", serif;
+           font-weight: 500;
+           font-style: normal;
+        }
+
+        .custom-card-body a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hover Animation Effect */
+        .custom-card:hover::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 123, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: pulse 0.6s ease-out infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.4; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+       
+        @media (max-width: 1024px) {
+            .custom-card {
+                flex: 1 1 calc(50% - 20px); 
+                transition: transform 0.3s ease-in-out;
+            }
+            .custom-card:hover::after {
+            content: "";
+            
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: pulse 0.6s ease-out infinite;}}
+
+        @media (max-width: 768px) {
+            .custom-card {
+                flex: 1 1 100%; 
+                
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .card-container {
+                padding: 20px;
+            }
+            .custom-card:hover {
+                .custom-card:hover::after {
+            content: "";
+            
+            transform: translate(-50%, -50%);
+            pointer-events:none;
+            animation: pulse 0.6s ease-out infinite;
+        }
+        }}
+
+
+.contact-form {
+  max-width: 600px; 
+  margin: 50px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.contact-form h2 {
+  text-align:left;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight:lighter;
+  font-size: 12px;
+  margin-top: 10px;
+  display: block;
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Lined Inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select {
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  padding: 5px 3px;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  margin-top: 3px;
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.contact-form input:focus,
+.contact-form select:focus {
+  outline: none;
+  border-bottom: 1.5px solid #007bff;
+}
+
+.contact-form select {
+  background: transparent;
+}
+
+.checkbox-group {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+.checkbox-group label{
+  margin-top:2px;
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.captcha-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: 2px;
+  width:280px;
+  height:60px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color:whitesmoke;
+  position: relative; /* Needed for absolute positioning of the image */
+}
+
+.captcha-container img {
+  position:relative;
+  left: 90px;
+  top: -6px;
+  
+  transform: translateY(-40%);
+  height: 40px;
+  width: 50px;
+  object-fit: cover;
+   
+}
+
+
+
+
+    .captcha-checkmark {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .captcha-checkmark.checked {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .captcha-checkmark.checked::after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      left: 5px;
+      top: 2px;
+    }
+
+    .captcha-text {
+      font-size: 12px;
+      color: #333;
+      margin-left:10px;
+      font-family: "Ubuntu", serif;
+      font-weight: 300;
+      font-style: normal;
+     
+    }
+
+    button {
+      width: 100%;
+      background-color: #0076c0;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-family: "Ubuntu", serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .contact-form p{
+      font-weight: lighter;
+      font-size: smaller;
+      margin-top: 15px;
+      color: #555;
+    }
+    
+
+    button:hover {
+      background-color: #005b9e;
+    }
+    .captcha-container img {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Keeps the aspect ratio */
+  padding-right: 1px;
+}
+.privacy-terms {
+  position: absolute;
+  bottom: 5px;
+  top: 40px;
+  left: 200px;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.4;
+}
+.privacy-terms a {
+  color: #0076c0;
+  text-decoration: none;
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.privacy-terms a:hover {
+  text-decoration: underline;
+}
+.recaptcha-text {
+  font-size: 8px;
+  position: absolute;
+  bottom: 25px;
+  left: 210px; 
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+@media (max-width: 400px) {
+
+  .contact-form p{
+    font-size:x-small;
+    padding-top: 10px; 
+  }
+  .checkbox-group{
+    font-size: smaller;
+    font-weight:lighter;
+  }
+  .captcha-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .privacy-terms {
+    text-align: left;
+  }
+  .checkbox-group label
+  {
+    font-weight: lighter;
+  }
+}
+
+.footer {
+      background: linear-gradient(to bottom, #fff, #eef1f5);
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      padding: 20px;
+    }
+
+    .footer-section h4 {
+      margin: 0 0 10px 0;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: "Ubuntu", serif;
+      font-weight: 500;
+      font-style: normal;
+}
+    
+
+    .footer-section hr {
+      margin: 10px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    .footer-section a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      margin: 5px 0;
+      font-family: "Ubuntu", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    .helpful-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .share-price .price {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .share-price .price span {
+      font-size: 16px;
+      color: gray;
+      font-family: "Ubuntu", serif;
+     font-weight: 300;
+      font-style: normal;
+    }
+
+    .share-price .price-change {
+      color: green;
+      font-size: 14px;
+      font-family: "Ubuntu", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      flex-wrap: wrap;
+      font-family: "Ubuntu", serif;
+     font-weight: 500;
+     font-style: normal;
+}
+.footer-bottom p{
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #555;
+}
+     
+    
+
+    .footer-bottom ul {
+      list-style: none;
+      padding-right:528px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer-bottom ul li a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: gray;
+      margin-top: 20px;
+      line-height: 1.5;
+      text-align: left;
+      padding-left: 490px;
+      padding-right: 200px;
+      font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: -20px;
+      }
+
+      .footer-section {
+        padding: 10px 0;
+        margin-bottom: -120px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: -120px;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+
+      .footer-bottom ul {
+        justify-content: center;
+        gap: 10px; 
+        margin-bottom: 120px;
+        padding-right: 50px;
+      }
+
+      .disclaimer {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+    }
+
+    @media (max-width: 480px) {
+      .share-price .price {
+        font-size: 24px;
+      }
+
+      .share-price .price span {
+        font-size: 14px;
+      }
+
+      .footer-section h4 {
+        font-size: 16px;
+      }
+
+      .social-icons img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .disclaimer {
+        font-size: 10px;
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-section">
+      <div class="logo">
+        <img src="C:\Users\C Madhumitha\Desktop\html\logoicon.png" alt="Roche Logo">
+      </div>
+      <div class="logo-text">
+        <div class="menu-item">About Roche
+          <div class="dropdown">
+            <a href="#">Company Overview</a>
+            <a href="#">Leadership</a>
+            <a href="#">History</a>
+          </div>
+        </div>
+        <div class="menu-item">Solutions
+          <div class="dropdown">
+            <a href="#">Healthcare Solutions</a>
+            <a href="#">Diagnostics</a>
+          </div>
+        </div>
+        <div class="menu-item">Innovation
+          <div class="dropdown">
+            <a href="#">Research & Development</a>
+            <a href="#">Technology</a>
+          </div>
+        </div>
+        <div class="menu-item">Stories
+          <div class="dropdown">
+            <a href="#">Latest News</a>
+            <a href="#">Customer Insights</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="extra-links">
+      <div class="menu-item">Media
+        <div class="dropdown">
+          <a href="#">Press Releases</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+      <div class="menu-item">Careers
+        <div class="dropdown">
+          <a href="#">Job Openings</a>
+          <a href="#">Internships</a>
+        </div>
+      </div>
+    </div>
+    <div class="icons">
+      <span>🔍</span>
+      <span>🌍</span>
+    </div>
+    <div class="menu-icon" onclick="toggleMobileMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn" onclick="toggleMobileMenu()">×</div>
+    <div class="menu-item">About Roche
+      <div class="dropdown">
+        <a href="#">Company Overview</a>
+        <a href="#">Leadership</a>
+        <a href="#">History</a>
+      </div>
+    </div>
+    <div class="menu-item">Solutions
+      <div class="dropdown">
+        <a href="#">Healthcare Solutions</a>
+        <a href="#">Diagnostics</a>
+      </div>
+    </div>
+    <div class="menu-item">Innovation
+      <div class="dropdown">
+        <a href="#">Research & Development</a>
+        <a href="#">Technology</a>
+      </div>
+    </div>
+    <div class="menu-item">Stories
+      <div class="dropdown">
+        <a href="#">Latest News</a>
+        <a href="#">Customer Insights</a>
+      </div>
+    </div>
+    <div class="menu-item">Media
+      <div class="dropdown">
+        <a href="#">Press Releases</a>
+        <a href="#">Events</a>
+      </div>
+    </div>
+    <div class="menu-item">Careers
+      <div class="dropdown">
+        <a href="#">Job Openings</a>
+        <a href="#">Internships</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.querySelector('.mobile-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+  <div class="hero">
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit vel delectus animi tempore voluptatum accusamus!</p>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroTitle = document.querySelector('.hero h1');
+      heroTitle.classList.add('animate');
+    });
+  </script>
+  </div>
+ 
+  
+  <div class="card-container">
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 1">
+        <div class="custom-card-body">
+            <h5>Startups & Businesses</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloremque blanditiis alias.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 2">
+        <div class="custom-card-body">
+            <h5>Engineering</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam eveniet, quam praesentium.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 3">
+        <div class="custom-card-body">
+            <h5>Health & Care</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laudantium eius.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 4">
+        <div class="custom-card-body">
+            <h5>Software & IT</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas iusto obcaecati.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 5">
+        <div class="custom-card-body">
+            <h5>Manufacturing & Logistics</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iure. Exercitationem dignissimos.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+
+    <div class="custom-card">
+        <img src="layoutbackground.jpg" alt="Card 6">
+        <div class="custom-card-body">
+            <h5>Education</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque vero ullam dolor.</p>
+            <a href="#">Learn more &rarr;</a>
+        </div>
+    </div>
+    <script>
+      document.querySelectorAll('.custom-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.backgroundColor = 'rgba(0, 123, 255, 0.2)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.backgroundColor = 'white';
+        });
+      });
+    </script>
+    
+</div>
+ <!-- Contact Form -->
+ <div class="contact-form">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="first-name">First Name*</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name*</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="title">Title*</label>
+    <select id="title" name="title" required>
+      <option value="">Select...</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem, ipsum dolor.</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem ipsum dolor.</option>
+    </select>
+
+    <label for="email">Company Email*</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number*</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="company">Company*</label>
+    <input type="text" id="company" name="company" required>
+
+    <label for="industry">Industry*</label>
+    <select id="industry" name="industry" required>
+      <option value="">Select...</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem, ipsum dolor.</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem ipsum dolor.</option>
+    </select>
+
+    <label for="revenue">Company Annual Revenue*</label>
+    <select id="revenue" name="revenue" required>
+      <option value="">Select...</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem, ipsum dolor.</option>
+      <option value="">Lorem, ipsum.</option>
+      <option value="">Lorem ipsum dolor.</option>
+    </select>
+
+
+      <p>By checking the box below I consent to JPMorgan Chase using the information I have provided to send me.</p>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="more-info">
+        <label for="more-info">More information and promotional messages from JPMorgan Chase</label>
+      </div>
+
+      <div class="captcha-container" id="captchaBox">
+        <div class="captcha-checkmark" id="checkmark"></div>
+        <span class="captcha-text">I'm not a robot</span>
+        <img src="captcha.png" alt="CAPTCHA Image" style="width: 30px; height: auto;">
+
+        <div class="recaptcha-text">reCAPTCHA</div>
+        <p class="privacy-terms"> <a href="#">Privacy</a>|<a href="#">Terms</a>.</p>
+      </div>
+
+      <button type="submit">SUBMIT</button>
+      
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("captchaBox").addEventListener("click", function () {
+      const checkmark = document.getElementById("checkmark");
+      checkmark.classList.toggle("checked");
+    });
+    document.querySelector('form').addEventListener('submit', function (event) {
+  event.preventDefault(); // For demonstration; remove this in production
+  alert('Form submitted successfully!');
+});
+
+
+  </script>
+  
+      
+   
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4 style="padding-bottom: 10px;">Contact</h4>
+      <hr style="width: 7cm; padding-bottom: 20px;">
+      <h4 style="padding-bottom: 10px;">Locations</h4>
+      <hr style="width: 7cm; padding-bottom: 20px;">
+    </div>
+
+    <div class="footer-section helpful-links">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem, ipsum</a></li>
+        <li><a href="#">Lorem, ipsum</a></li>
+        <li><a href="#">Lorem, ipsum dolor</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section share-price">
+      <h4>Share Price</h4>
+      <p class="price">275.40 <span>CHF</span></p>
+      <p class="price-change">+1.00 (+0.36%) Today</p>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img src="C:\Users\C Madhumitha\Desktop\html\icons8-linkedin-48.png" alt="LinkedIn"></a>
+    <a href="#"><img src="C:\Users\C Madhumitha\Desktop\html\icons8-facebook-logo-48.png" alt="Facebook"></a>
+    <a href="#"><img src="C:\Users\C Madhumitha\Desktop\html\icons8-x-50.png" alt="X"></a>
+    <a href="#"><img src="icons8-instagram-logo-48.png" alt="Instagram"></a>
+    <a href="#"><img src="C:\Users\C Madhumitha\Desktop\html\icons8-youtube-48.png" alt="YouTube"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 F. Hoffmann-La Roche Ltd 1/24/2025</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal Statement</a></li>
+      <li><a href="#">Accessibility Statement</a></li>
+      <li><a href="#">Cookies</a></li>
+    </ul>
+  </div>
+
+  <p class="disclaimer">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam, voluptatem quam cum vitae sint ut 
+    voluptates atque. Odit possimus magni itaque modi quidem non at officiis, omnis, minima incidunt repellat enim 
+    adipisci velit. Asperiores ipsum mollitia assumenda perspiciatis consequuntur atque reprehenderit itaque quis sunt 
+    incidunt. Asperiores soluta omnis pariatur laboriosam blanditiis ut laudantium, est corrupti accusamus illo veniam.
+  </p>
+</footer>
+
+</body>
+</html>   
+
+

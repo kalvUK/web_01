@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header1">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="C:\Users\Thulasi\OneDrive\Desktop\html tutorial\Logo_vector.png" alt="Roche Logo">
+        </div>
+        <div class="logo-text">
+          <div class="menu-item">About Roche
+            <div class="dropdown">
+              <a href="#">Company Overview</a>
+              <a href="#">Leadership</a>
+              <a href="#">History</a>
+            </div>
+          </div>
+          <div class="menu-item">Solutions
+            <div class="dropdown">
+              <a href="#">Healthcare Solutions</a>
+              <a href="#">Diagnostics</a>
+            </div>
+          </div>
+          <div class="menu-item">Innovation
+            <div class="dropdown">
+              <a href="#">Research & Development</a>
+              <a href="#">Technology</a>
+            </div>
+          </div>
+          <div class="menu-item">Stories
+            <div class="dropdown">
+              <a href="#">Latest News</a>
+              <a href="#">Customer Insights</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extra-links">
+        <div class="menu-item">Media
+          <div class="dropdown">
+            <a href="#">Press Releases</a>
+            <a href="#">Events</a>
+          </div>
+        </div>
+        <div class="menu-item">Careers
+          <div class="dropdown">
+            <a href="#">Job Openings</a>
+            <a href="#">Internships</a>
+          </div>
+        </div>
+      </div>
+      <div class="icons">
+        <span>🔍</span>
+        <span>🌍</span>
+      </div>
+      <div class="menu-icon" onclick="toggleMobileMenu()">☰</div>
+    </header>
+  
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="close-btn" onclick="toggleMobileMenu()">×</div>
+      <div class="menu-item">About Roche
+        <div class="dropdown">
+          <a href="#">Company Overview</a>
+          <a href="#">Leadership</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+      <div class="menu-item">Solutions
+        <div class="dropdown">
+          <a href="#">Healthcare Solutions</a>
+          <a href="#">Diagnostics</a>
+        </div>
+      </div>
+      <div class="menu-item">Innovation
+        <div class="dropdown">
+          <a href="#">Research & Development</a>
+          <a href="#">Technology</a>
+        </div>
+      </div>
+      <div class="menu-item">Stories
+        <div class="dropdown">
+          <a href="#">Latest News</a>
+          <a href="#">Customer Insights</a>
+        </div>
+      </div>
+      <div class="menu-item">Media
+        <div class="dropdown">
+          <a href="#">Press Releases</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+      <div class="menu-item">Careers
+        <div class="dropdown">
+          <a href="#">Job Openings</a>
+          <a href="#">Internships</a>
+        </div>
+      </div>
+    </div>
+    <div class="statement aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+        Doing now what patients need next
+      </div>
+    
+      <!-- Image Container with Scroll Effect -->
+      <div class="image-container" id="image-container">
+        <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Plain Image">
+      </div>
+      <div class="container">
+        <h2 >Lorem, ipsum.</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad laborum ex incidunt vero alias..</p>
+
+        <!-- Card Container Section -->
+        <div class="scroll-wrapper">
+            <div class="card-container" id="cardContainer">
+                <div class="card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Sustainability">
+                    <div class="card-content">
+                        <h3>LOREM</h3>
+                        <p style="padding-left:20px">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="arrow">&#8594;</div>
+                </div>
+
+                <div class="card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="What We Do">
+                    <div class="card-content">
+                        <h3>LOREM</h3>
+                        <p style="padding-left:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse nostrum deserunt quia mollitia quas!</p>
+                    </div>
+                    <div class="arrow">&#8594;</div>
+                </div>
+
+                <div class="card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Careers">
+                    <div class="card-content">
+                        <h3>LOREM</h3>
+                        <p style="padding-left:20px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos?</p>
+                    </div>
+                    <div class="arrow">&#8594;</div>
+                </div>
+
+                <div class="card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Investors">
+                    <div class="card-content">
+                        <h3>LOREM </h3>
+                        <p style="padding-left:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.</p>
+                    </div>
+                    <div class="arrow">&#8594;</div>
+                </div>
+            </div>
+        </div>
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBbar"></div>
+        </div>
+    </div>
+    <div class="lecontainer">
+        <h2 >LOREM IPSUM DOLAR</h2>
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, illum.</p>
+        <div class="image-gallery" id="imageGallery">
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="People">
+                <p style="padding-left:10px">Lorem ipsum dolor </p>            
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="F1 Racing">
+                <p style="padding-left:10px">Lorem ipsum dolor </p>           
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Journalists">
+                <p style="padding-left:10px">Lorem, ipsum dolor.</p>           
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Perspective">
+                <p style="padding-left:10px">Lorem, ipsum dolor.</p>
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Footprint">
+                <p style="padding-left:10px">Lorem, ipsum dolor.</p>
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+            <div class="box">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Manifa Story">
+                <p style="padding-left:10px">Lorem, ipsum dolor.</p>
+                <a href="#" class="read-more1">Read More <span class="arrow">&#8594;</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>     
+    </div>
+    <div class="header">
+        <h1>INSIGHT</h1>
+        <div class="magazine-link">
+            <a href="#">
+                Visit the Magazine
+                <div class="circle-arrow"></div>
+            </a>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="small-images">
+            <div class="small">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Charting new orbits in space">
+                <div class="caption">Lorem ipsum dolor sit amet.</div>
+                <a href="#" class="read-more">→ read more</a>
+            </div>
+            <div class="small">
+                <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Worker at Aramco">
+                <div class="caption">Lorem, ipsum dolor.</div>
+                <a href="#" class="read-more">→ read more</a>
+            </div>
+        </div>
+        <div class="large">
+            <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Energy solutions">
+            <div class="caption">Lorem, ipsum dolor.</div>
+            <a href="#" class="read-more">→ read more</a>
+        </div>
+    </div>
+
+    <div>
+        <p class="section-titleoc">SUSTAINABILITY</p>
+        <h1 class="main-titleoc">Lorem, ipsum.</h1>
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum unde ab quisquam recusandae ipsum?
+        </p>
+    </div>
+    
+    <div class="cardoc-container">
+        <div class="cardoc">
+            <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Climate and Energy">
+            <div class="cardoc-content">
+                <p class="cardoc-title">Lorem, ipsum dolor.</p>
+                <p class="cardoc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ipsa similique culpa minima minus aliquid.</p>
+                <a href="#" class="read-moreoc">→ read more</a>
+            </div>
+        </div>
+        <div class="cardoc">
+            <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="People and Safety">
+            <div class="cardoc-content">
+                <p class="cardoc-title">Lorem, ipsum dolor.</p>
+                <p class="cardoc-text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="#" class="read-moreoc">→ read more</a>
+            </div>
+        </div>
+        <div class="cardoc">
+            <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Biodiversity Initiatives">
+            <div class="cardoc-content">
+                <p class="cardoc-title">Lorem, ipsum.</p>
+                <p class="cardoc-text">Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="#" class="read-moreoc">→ read more.</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="containernews">
+        <h1 style="font-size: 36px; color: #333; margin-bottom: 50px">News</h1>
+        
+        <div class="read-morenews">
+            <a href="#">Read all news</a>
+        </div>
+        
+        <div class="news-container">
+            <div class="news-section">
+                <!-- 1st News Card -->
+                <div class="news-card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="Aramco JV">
+                    <div class="news-content">
+                        <p>NEWS · JANUARY 15, 2025</p>
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+
+                <!-- 2nd News Card -->
+                <div class="news-card">
+                    <div class="news-content">
+                        <p>NEWS · JANUARY 14, 2025</p>
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+
+                <!-- 3rd News Card -->
+                <div class="news-card">
+                    <img src="C:\Users\Thulasi\OneDrive\Desktop\mainpage\images.jpg" alt="iktva 2025">
+                    <div class="news-content">
+                        <p>NEWS · JANUARY 13, 2025</p>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+                    </div>
+                </div>
+
+                <!-- 4th News Card -->
+                <div class="news-card">
+                    <div class="news-content">
+                        <p>NEWS · DECEMBER 04, 2024</p>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="containerdo">
+        <h1 style="font-size: 36px; color: #333; margin-bottom: 80px; margin-top: 160px;">Downloads</h1>
+        <div class="see-all-reports">
+            <a href="#">See all reports</a>
+        </div>
+        <div class="reportsdo-section">
+            <h2>Key documents</h2>
+            <div class="reportdo-item">
+                <div class="reportdo-title">Q3 2024 interim report</div>
+                <div class="reportdo-info">November 05, 2024 · .pdf · 1.3MB</div>
+                <div class="reportdo-actions">
+                    <span class="icon">↓</span>
+                    <span class="icon">+</span>
+                </div>
+            </div>
+            <div class="reportdo-item">
+                <div class="reportdo-title">Our 2023 Sustainability Report</div>
+                <div class="reportdo-info">May 27, 2024 · .pdf · 13.7MB</div>
+                <div class="reportdo-actions">
+                    <span class="icon">↓</span>
+                    <span class="icon">+</span>
+                </div>
+            </div>
+            <div class="reportdo-item">
+                <div class="reportdo-title">Annual Report 2023</div>
+                <div class="reportdo-info">March 11, 2024 · .pdf · 18.2MB</div>
+                <div class="reportdo-actions">
+                    <span class="icon">↓</span>
+                    <span class="icon">+</span>
+                </div>
+            </div>
+        </div>
+        <div class="download-link">
+            <a href="#">Download zip-file</a>
+        </div>
+    <div class="glance-section">
+        <div class="glance-title">At a glance</div>
+        <div class="glance-content">
+            <div class="glance-item">
+                <h1>91</h1>
+                <p>Years of experience</p>
+            </div>
+            <div class="glance-item">
+                <h1>73,000+</h1>
+                <p>Total workforce</p>
+            </div>
+            <div class="glance-item">
+                <h1>251.2</h1>
+                <p>Total hydrocarbon reserves <br><span>(billion boe)</span></p>
+            </div>
+        </div>
+    </div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4 style="padding-bottom: 10px;">Contact</h4>
+      <hr style="width: 7cm; padding-bottom: 20px;">
+      <h4 style="padding-bottom: 10px;">Locations</h4>
+      <hr style="width: 7cm; padding-bottom: 20px;">
+    </div>
+
+    <div class="footer-section helpful-links">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem, ipsum</a></li>
+        <li><a href="#">Lorem, ipsum</a></li>
+        <li><a href="#">Lorem, ipsum dolor</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section share-price">
+      <h4>Share Price</h4>
+      <p class="price">275.40 <span>CHF</span></p>
+      <p class="price-change">+1.00 (+0.36%) Today</p>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-linkedin-48.png" alt="LinkedIn"></a>
+    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-facebook-48.png" alt="Facebook"></a>
+    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-twitter-30.png" alt="X"></a>
+    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-instagram-48.png" alt="Instagram"></a>
+    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-youtube-48.png" alt="YouTube"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 F. Hoffmann-La Roche Ltd 1/24/2025</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal Statement</a></li>
+      <li><a href="#">Accessibility Statement</a></li>
+      <li><a href="#">Cookies</a></li>
+    </ul>
+  </div>
+
+  <p class="disclaimer">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam, voluptatem quam cum vitae sint ut 
+    voluptates atque. Odit possimus magni itaque modi quidem non at officiis, omnis, minima incidunt repellat enim 
+    adipisci velit. Asperiores ipsum mollitia assumenda perspiciatis consequuntur atque reprehenderit itaque quis sunt 
+    incidunt. Asperiores soluta omnis pariatur laboriosam blanditiis ut laudantium, est corrupti accusamus illo veniam.
+  </p>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>

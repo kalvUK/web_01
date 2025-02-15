@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.ME16N700{
+
+    font-family: "Merriweather", serif;
+font-weight: 700;
+font-style: normal;
+font-size: 16px;
+
+
+}
+
+
+.US14N300{
+  font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+.US20N300{
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+
+.US18N400{
+  font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    font-size: 18px;
+}
+
+.US18N500{
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+
+.US18N600{
+  font-family: "Ubuntu", serif;
+          font-weight: 600;
+          font-style: normal;
+          font-size: 18px;
+
+}
+
+.US18N700{
+
+  font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.US50N700{
+
+  font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.US30N700{
+
+  font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.US18N900{
+  font-family: "Ubuntu", serif;
+      font-weight: 900;
+      font-style: normal;
+}
+
+
+.US18B100{
+    font-family: "Ubuntu", serif;
+      font-weight: 100;
+      font-weight: bold;
+      font-size: 18px;}
+
+.US14B200{
+    font-family: "Ubuntu", serif;
+      font-weight: 200;
+      font-style:bold;
+      font-size: 14px;
+
+}
+
+.US18B300{
+    font-family: "Ubuntu", serif;
+      font-weight: 300;
+      font-style:bold;
+      font-size: 18px;
+
+}
+
+.US18B400{
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style:bold;
+    font-size: 18px;
+}
+
+.US20B500{
+    font-family: "Ubuntu", serif;
+      font-weight: 500;
+      font-style:bold;
+      font-size: 20px;
+
+}
+
+
+.US22B500{
+  font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style:bold;
+    font-size: 22px;
+
+}
+.US18I100{
+    font-family: "Ubuntu", serif;
+      font-weight: 100;
+      font-style:italic;
+      font-size: 18px;
+
+}
+.US18I200{
+    font-family: "Ubuntu", serif;
+      font-weight: 200;
+      font-style:italic;
+      font-size: 18px;
+}

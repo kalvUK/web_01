@@ -43,6 +43,7 @@ font-style: normal;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
+    left: 90px;
   }
 
   .dropdown {
@@ -77,13 +78,13 @@ font-style: normal;
 
   .extra-links {
     display: flex;
-    gap: 20px;
-    padding-left: 850px;
+    gap: 40px;
+    padding-left: 600px;
   }
 
   .icons {
     display: flex;
-    gap: 15px;
+    gap: 65px;
     font-size: 20px;
     cursor: pointer;
   }

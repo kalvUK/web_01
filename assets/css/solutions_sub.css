@@ -314,9 +314,7 @@
         display: block;
       }
       
-      .card-content {
-        padding: 15px;
-      }
+      
       .category {
         color: #a46d44;
         font-size: 14px;
@@ -347,6 +345,10 @@
         border-left: 4px solid #a46d44;
         padding: 15px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      .list-item:hover{
+        transform: scale(1.07);
       }
       
       .time, .category {
@@ -370,6 +372,7 @@
         padding: 30px;
         max-width: 1000px;
         cursor: pointer;
+        height: 400px;
         transition: transform 0.3s ease;
         position: relative;
         margin-top: -350px;
@@ -387,6 +390,7 @@
         transition: transform 0.3s ease;
         position: relative;
         margin-top: -30px;
+        height: 490px;
         
         
       }
@@ -398,7 +402,7 @@
         padding: 30px;
         max-width: 90%;
         width: 90%;
-        height: 100%;
+        height: 85%;
         cursor: pointer;
         transition: transform 0.3s ease;
         position: relative;
@@ -443,15 +447,64 @@
       
       .solution-content {
         padding: 15px;
+        margin-top: -300px;
       }
-      
+      .solution-content1{
+        padding: 15px;
+        margin-top: -140px;
+      }
+      .solution-content2{
+        padding: 15px;
+        margin-top: -310px;
+      }
       .solution-content h3 {
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
       }
+      .solution-content3{
+        padding: 15px;
+        margin-top: -310px;
+      }
       
       .solution-content p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .solution-content3 h3 {
+        font-size: 20px;
+        color: #003366;
+        margin-bottom: 10px;
+      }
+      .solution-content4{
+        padding: 15px;
+        margin-top: -280px;
+      }
+      
+      .solution-content4 p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .solution-content4 h3 {
+        font-size: 20px;
+        color: #003366;
+        margin-bottom: 10px;
+      }
+      
+      .solution-content3 p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .solution-content2 h3 {
+        font-size: 20px;
+        color: #003366;
+        margin-bottom: 10px;
+      }
+      
+      .solution-content2 p {
         font-size: 14px;
         color: #666;
         margin-bottom: 15px;
@@ -471,6 +524,7 @@
         position: relative;
         top: -500ox;
         margin-top: -100px;
+        height: 480px;
         
       }
       .solution1-card1:hover{
@@ -513,6 +567,7 @@
         color: #666;
         margin-bottom: 15px;
       }
+      
       
       
       .learn-more {
@@ -575,11 +630,15 @@
         color: #fff;
         border: #0052cc;
         padding: 12px;
+        text-decoration: none;
         
       }
       
       .primary-btn:hover {
-        background-color: #0052cc;
+        background-color: #f9fafb;
+        color: #0909f6;
+        
+       
       }
       
       .secondary-btn {
@@ -589,10 +648,13 @@
         position: relative;
         left: 20px;
         padding: 10px;
+        text-decoration: none;
       }
       
       .secondary-btn:hover {
-        background-color: #fbfbfc;
+        background-color: #0909f6;
+        color: white;
+        border-color: #0909f6;
       }
       
       .btn {
@@ -645,6 +707,7 @@
         transition: transform 0.3s ease;
         padding: 30px;
         position: relative;
+       
         
         
         
@@ -661,7 +724,9 @@
         margin-bottom: 15px;
         padding: 15px;
       }
-      
+      .cards-last{
+        margin-top: 140px;
+      }
       .learn-more {
         font-size: 14px;
         color: #0072c6;
@@ -921,6 +986,13 @@
     .footer-links p:hover {
         text-decoration: underline;
     }
+    .section-title:hover{
+      text-decoration: underline;
+
+    }
+    .section-title ul :hover{
+text-decoration: underline;
+    }
     nav{
         text-align: center;
         font-size: medium;
@@ -1031,16 +1103,21 @@
     display: inline-block;
 
   }
-
+  
   .cards-last1 div {
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
+
   }
- 
+ .cards-last1{
+  margin-left: 110px;
+  margin-top: 40px;
+ }
   
   .cards-last{
    margin-top: 1040px;
    position: relative;
+   
         
   }
   .car1{
@@ -1061,45 +1138,60 @@
     left: 150px;
     top: -330px;
     max-width: max-content;
-    width:100%;
+    width:550px;
     margin-top: 150px;
     
   }
+
   .insights-container .card2{
     position: relative;
-    top: 20px;
+    margin-top: 40px;
+    left: -40px;
+  }
+  .insights-container .card1{
+    left: -40px;
+    position: relative;
+    
   }
   .list-item{
     position: relative;
     top: 30px;
+    width: 550px;
+    left: -40px;
   }
  .solutions {
-    gap: 20px;
+    gap: 30px;
     display: block;
-    width: 600px;
+    width: 900px;
     position: relative;
     right: 20px;
     left: 100px;
-    top: 100px;
+    top: 10px;
     max-width: max-content;
+    height: 400px;
+   
   }
   .solutions8 {
     gap: 20px;
     display: block;
-    width: 600px;
+    width: 900px;
     position: relative;
    max-width: max-content;
-    left: 80px;
+    left: 70px;
     top: 100px;
+    margin-top: 470px;
+    height: 500px;
+   display: none;
   }
   .solutions9 {
     gap: 20px;
     display: block;
-    width: 600px;
+    width: 900px;
     position: relative;
     right: 20px;
     left: 100px;
     top: 100px;
+    margin-top: 330px;
     max-width: max-content;
   } 
 
@@ -1115,8 +1207,9 @@
 }
 
 .solution-content {
-  width: 70%; 
-  padding: 15px;
+  width: 60%; 
+  padding: 35px;
+  margin-top: -240px;
 }
 
 .solution-content h3 {
@@ -1129,6 +1222,37 @@
   margin-bottom: 8px;
 }
 
+.solution-content2 {
+  width: 60%; 
+  padding: 35px;
+  margin-top: -250px;
+}
+
+.solution-content2 h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.solution-content2 p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.solution-content3 {
+  width: 60%; 
+  padding: 35px;
+  margin-top: -230px;
+}
+
+.solution-content3 h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.solution-content3 p {
+  font-size: 14px; 
+  margin-bottom: 8px;
+}
+
 .learn-more {
   font-size: 14px;
 }
@@ -1137,7 +1261,7 @@
 .next-steps{
 position: relative;
 top: -380px;
-left: 50px;
+margin-left: -110px;
 margin-top: 70px;  
 
 }

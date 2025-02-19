@@ -46,9 +46,14 @@
         right: 300px;
         top: -30px;
       }
-      
-      .hero-text h1 {
-        font-size: 48px;
+      .ma{
+        text-decoration: none;
+      }
+      .ma:hover{
+        text-decoration: underline;
+      }
+        
+        .hero-text h1 .US14B200  {
         margin-bottom: 20px;
       }
       
@@ -107,7 +112,7 @@
         padding: 20px;
       }
       
-      .overview h2 {
+      .overview h2 .US50N700{
         font-size: 28px;
         margin-bottom: 10px;
       }
@@ -133,7 +138,7 @@
        
       }
      
-      .card-last1 h3 {
+      .card-last1 h3 .US14N300{
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -457,7 +462,7 @@
         padding: 15px;
         margin-top: -310px;
       }
-      .solution-content h3 {
+      .solution-content h3 .US14N300 {
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -472,7 +477,7 @@
         color: #666;
         margin-bottom: 15px;
       }
-      .solution-content3 h3 {
+      .solution-content3 h3 .US14N300 {
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -487,7 +492,7 @@
         color: #666;
         margin-bottom: 15px;
       }
-      .solution-content4 h3 {
+      .solution-content4 h3 .US14N300{
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -498,7 +503,7 @@
         color: #666;
         margin-bottom: 15px;
       }
-      .solution-content2 h3 {
+      .solution-content2 h3 .US14N300{
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -556,7 +561,7 @@
         padding: 15px;
       }
       
-      .solution-content1 h3 {
+      .solution-content1 h3 .US14N300{
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;
@@ -594,7 +599,7 @@
         
       }
       
-      .next-steps h2 {
+      .next-steps h2 .US50N700 {
         font-size: 28px;
         color: #000;
         margin-bottom: 15px;
@@ -712,7 +717,7 @@
         
         
       }
-      .card-last h3 {
+      .card-last h3 .US14N300{
         font-size: 20px;
         color: #003366;
         margin-bottom: 10px;

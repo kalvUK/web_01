@@ -52,3 +52,5 @@ img.src = "image2.png"; // Change to the new image
 img.src = "image1.png"; // Revert back to the original
 }
 }
+
+  

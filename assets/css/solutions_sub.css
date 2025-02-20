@@ -38,12 +38,13 @@
         
       }
       .hero-text {
-        width: 100%;
+      
         max-width: 600px;
-        margin-left: 0px;
+        margin-left: -540px;
+        
         position: static;
         z-index: 1;
-        right: 300px;
+       
         top: -30px;
       }
       .ma{

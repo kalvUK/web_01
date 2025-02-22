@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../web_01/assets/css/document_centre.css">
+    <link  rel="stylesheet" href="../../web_01/assets/css/fonts.css">
+    <script src="../../web_01/assets/js/document_centre.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Section</title>
+ 
+</head>
+<body>
+    <div class="document-centre">
+        <div class="banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1 class="US20B500" >Document Centre</h1>
+                <p class="US14N300">Our sustainability policies, codes of conduct & reports</p>
+            </div>
+        </div>
+        <div class="description US14N300">
+            <p>
+                At Airbus, we believe in transparent disclosure of environmental, social, 
+                and governance issues relating to our business. Browse this space to download 
+                or view related documents, policies, reports, and more.
+            </p>
+        </div>
+    </div>
+    <div class="accordion-section">
+        <div class="controls US20B500">
+          
+            <button onclick="collapseAll()">− Collapse All</button>
+            <button onclick="unfoldAll()">+ Unfold All</button>
+        </div>
+
+        <div class="accordion-item US14N300">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                Environment
+                <span class="icon">+</span>
+            </div>
+            <div class="accordion-content US14N300">
+                <p>Our ambition includes a strong engagement on reducing our major environmental impacts, taking a life cycle perspective for sustainable Airbus business and growth.</p>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, incidunt?</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In alias fuga rerum tempora labore repellendus!</a><br>
+                <a href="#" class="button-link">ISO 14001:2015 Airbus SAS</a>
+                <p>A Statement by the Chief Technology Officers of seven of the world's major aviation manufacturers.</p>
+                <a href="#" class="button-link">The Sustainability of Aviation CTO statement</a>
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+                <p>This document highlights the importance of substance management throughout the supply chain, focusing on the European (EU) REACH regulation (EC no. 1907/2006).</p>
+                <a href="#" class="button-link">REACH Substances: Certain requirements & Substitution programmes</a>
+                <p>A Statement by the Chief Technology Officers of seven of the world's major aviation manufacturers.</p>
+                <a href="#" class="button-link">The Sustainability of Aviation CTO statement</a>
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+                <p>This document highlights the importance of substance management throughout the supply chain, focusing on the European (EU) REACH regulation (EC no. 1907/2006).</p>
+                <a href="#" class="button-link">REACH Substances: Certain requirements & Substitution programmes</a>
+            </div>
+        </div>
+
+        <div class="accordion-item  US14N300">
+            <div class="accordion-header US20B500" onclick="toggleAccordion(this)">
+                Ethics & Compliance
+                <span class="icon">+</span>
+            </div>
+            <div class="accordion-content US14N300">
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+                <p>This document highlights the importance of substance management throughout the supply chain, focusing on the European (EU) REACH regulation (EC no. 1907/2006).</p>
+                <a href="#" class="button-link">REACH Substances: Certain requirements & Substitution programmes</a>
+                <p>A Statement by the Chief Technology Officers of seven of the world's major aviation manufacturers.</p>
+                <a href="#" class="button-link">The Sustainability of Aviation CTO statement</a>
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+            </div>
+        </div>
+
+        <div class="accordion-item US14N300">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                Governance & Legal
+                <span class="icon">+</span>
+            </div>
+            <div class="accordion-content US14N300">
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+                <p>This document highlights the importance of substance management throughout the supply chain, focusing on the European (EU) REACH regulation (EC no. 1907/2006).</p>
+                <a href="#" class="button-link">REACH Substances: Certain requirements & Substitution programmes</a>
+                <p>A Statement by the Chief Technology Officers of seven of the world's major aviation manufacturers.</p>
+                <a href="#" class="button-link">The Sustainability of Aviation CTO statement</a>
+                <p>Airbus' answer to the 2023 CDP climate change questionnaire.</p>
+                <a href="#" class="button-link">2023 CDP Climate Change Questionnaire</a>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header  US20B500" onclick="toggleAccordion(this)">
+                Human Rights
+                <span class="icon">+</span>
+            </div>
+            <div class="accordion-content US14N300">
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header  US20B500" onclick="toggleAccordion(this)">
+                Inclusion & Diversity
+                <span class="icon">+</span>
+            </div>
+            <div class="accordion-content US14N300">
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+                <a href="#" class="button-link">Environmental Policy Statement</a><br>
+            </div>
+        </div>
+    </div>
+
+    
+<div class="banner2">
+    <h1 class="US20B500">Discover past sustainability reporting documents in our Archive</h1>
+    <a href="#" class="button2 US14N300">Read more</a>
+  </div>
+    <hr>
+    
+
+    <h1 class="section1-title  US20B50">Discover more</h1>
+  <div class="grid">
+    <div class="card2 US14N300">
+      <img src="career-1.jpg" alt="Sustainability Reporting">
+      <div class="overlay">
+        <h2 class="US20B500">Our approach to sustainability reporting</h2>
+        <p>Prioritising our responsibility & sustainability efforts</p>
+        <a href="#" class="button4">Discover</a>
+      </div>
+    </div>
+    <div class="card2 US14N300">
+      <img src="career-1.jpg" alt="Performance Data">
+      <div class="overlay">
+        <h2 class="US20B500">Global Reporting Initiative & performance data</h2>
+        <p>A framework for our ESG reporting</p>
+        <a href="#" class="button4">Discover</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

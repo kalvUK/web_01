@@ -23,12 +23,19 @@
   }
 
   /* Tablet */
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
     .hero {
       padding: 150px 30px;
     }
+    .hero h1{
+        font-size: 25px;
+        margin: 0%;
+        padding: 0%;
+    }
     .hero p {
-      max-width: 900px;
+        font-size: 20px;
+      max-width: 400px;
+      padding-left: 5px;
     }
   }
 
@@ -136,14 +143,13 @@
       animation: pulse 0.6s ease-out infinite;}}
 
   @media (max-width: 768px) {
+    .card-container{
+        margin: 0%;
+    }
+    
       .custom-card {
           flex: 1 1 100%;  
           transition: transform 0.3s ease-in-out;
-      }
-
-      .card-container {
-          padding: 20px;
-          margin-top: 30px;
       }
       .custom-card:hover {
           .custom-card:hover::after {

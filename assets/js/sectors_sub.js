@@ -26,15 +26,3 @@ cards.forEach(card => {
   });
 });
 
-
-//message popup after submisiion and checkmark
-
-document.getElementById("captchaBox").addEventListener("click", function () {
-    const checkmark = document.getElementById("checkmark");
-    checkmark.classList.toggle("checked");
-  });
-  document.querySelector('form').addEventListener('submit', function (event) {
-event.preventDefault(); // For demonstration; remove this in production
-alert('Form submitted successfully!');
-});
-

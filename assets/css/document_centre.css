@@ -1,142 +1,269 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-.ME16N700{
-
-    font-family: "Merriweather", serif;
-font-weight: 700;
-font-style: normal;
-font-size: 16px;
-
-
+body {
+  padding: 20px;
 }
 
 
-.US14N300{
-  font-family: "Ubuntu", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-}
-.US20N300{
-  font-family: "Ubuntu", serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-
+.document-centre {
+  text-align: center;
 }
 
-
-.US18N400{
-  font-family: "Ubuntu", serif;
-    font-weight: 400;
-    font-style: normal;
-   
-    font-size: 18px;
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url('your-banner-image.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-.US18N500{
-    font-family: "Ubuntu", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-
-
-.US18N600{
-  font-family: "Ubuntu", serif;
-          font-weight: 600;
-          font-style: normal;
-          font-size: 18px;
-
+.banner-content {
+  position: relative;
+  z-index: 2;
 }
 
-.US18N700{
-
-  font-family: "Ubuntu", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
+.banner p {
+  margin-top: 5px;
 }
 
-.US50N700{
-
-  font-family: "Ubuntu", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
+.description {
+  max-width: 800px;
+  margin: 30px auto;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-.US30N700{
-
-  font-family: "Ubuntu", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
+@media (max-width: 768px) {
+  .banner {
+      height: 180px;
+  }
 }
 
-.US18N900{
-  font-family: "Ubuntu", serif;
-      font-weight: 900;
-      font-style: normal;
+.accordion-section {
+  width: 100%;
+  margin: 0 auto;
 }
 
-
-.US18B100{
-    font-family: "Ubuntu", serif;
-      font-weight: 100;
-      font-weight: bold;
-      font-size: 18px;}
-
-.US14B200{
-    font-family: "Ubuntu", serif;
-      font-weight: 200;
-      font-style:bold;
-      font-size: 14px;
-
+.controls {
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-.US18B300{
-    font-family: "Ubuntu", serif;
-      font-weight: 300;
-      font-style:bold;
-      font-size: 18px;
-
+.controls button {
+  background: none;
+  border: none;
+  color: #003366;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.US18B400{
-    font-family: "Ubuntu", serif;
-    font-weight: 400;
-    font-style:bold;
-    font-size: 18px;
+.accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.US20B500{
-    font-family: "Ubuntu", serif;
-      font-weight: 500;
-      font-style:bold;
-      font-size: 20px;
+.accordion-header {
+  background-color: #f7f9fc;
+  padding: 15px;
+  color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
 
+.accordion-header:hover {
+  background-color: #e0e7f1;
 }
 
 
-.US22B500{
-  font-family: "Ubuntu", serif;
-    font-weight: 500;
-    font-style:bold;
-    font-size: 22px;
 
+.button-link {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 10px 5px 5px 0;
+  border: 1px solid #003366;
+  border-radius: 5px;
+  color: #003366;
+  background-color: #f0f5ff;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.US18I100{
-    font-family: "Ubuntu", serif;
-      font-weight: 100;
-      font-style:italic;
-      font-size: 18px;
 
+.button-link:hover {
+  background-color: #003366;
+  color: white;
 }
-.US18I200{
-    font-family: "Ubuntu", serif;
-      font-weight: 200;
-      font-style:italic;
-      font-size: 18px;
+.accordion-content {
+  padding: 15px;
+  color: #333;
+  border-top: 1px solid #ccc;
+  display: none;
 }
+
+@media (max-width: 768px) {
+}
+hr {
+background-color:gray;
+margin: 60px 0;
+}
+.banner2 {
+background-color: #9BA7B1;
+color: white;
+padding: 50px;
+margin-top: 90px;
+text-align: left;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+height: 300px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.banner2 h1 {
+margin-bottom: 20px;
+}
+.button2 {
+background-color: white;
+color: #000;
+padding: 10px 20px;
+border-radius: 6px;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+.button2:hover {
+background-color: #e0e0e0;
+}
+@media (max-width: 768px) {
+
+.banner2 {
+padding: 30px;
+height: 250px;
+}
+}
+.section1-title {
+text-align: center;
+margin: 30px 0;
+}
+.grid {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+flex-wrap: wrap;
+}
+.card1 {
+position: relative;
+width: 100%;
+max-width: 350px;
+height: 250px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+.card1:hover {
+transform: translateY(-5px);
+}
+.card1 img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 20px;
+color: white;
+background: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(5px);
+}
+.overlay h2 {
+margin-bottom: 5px;
+}
+.overlay p {
+margin-bottom: 10px;
+}
+.button4 {
+background-color: white;
+color: black;
+padding: 8px 15px;
+text-decoration: none;
+border-radius: 6px;
+transition: background-color 0.3s;
+}
+.button4:hover {
+background-color: #e0e0e0;
+}
+@media (max-width: 768px) {
+.grid {
+flex-direction: column;
+align-items: center;
+}
+.card1 {
+max-width: 90%;
+}
+}
+
+.section1-title
+{ 
+text-align: center; 
+margin: 50px 0 30px;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+gap: 32px;
+padding: 50px;
+justify-items: center;
+}
+.card2 {
+position: relative; width: 500px; height: 300px;
+border-radius: 16px; overflow: hidden;
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease-in-out;
+}
+.card2:hover { 
+transform: translateY(-6px);
+}
+.card2 img { 
+width: 100%;
+height: 100%;
+object-fit: cover; 
+}
+.overlay {
+position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(0, 0, 0, 0.4); color: white;
+display: flex; flex-direction: column; justify-content: center; align-items: center;
+padding: 20px; text-align: center;
+}
+.overlay h2
+{ 
+margin-bottom: 8px;
+padding-right: 50px; 
+}
+.overlay p { 
+margin-bottom: 12px;
+padding-right: 50px; 
+}
+.button4 {
+margin-right: 50px;
+padding: 10px 20px; 
+color: black; background-color: white; border-radius: 8px;
+text-decoration: none; transition: 0.3s;
+}
+.button4:hover { background-color: #e0e0e0; }

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../web_01/assets/css/fonts.css">
+<style>
+    
+    .contact-form {
+        max-width: 600px; 
+        margin: 50px auto;
+        padding: 15px;
+        }
+        
+        .contact-form h2 {
+        text-align:left;
+        margin-bottom: 15px;
+        }
+        
+        .contact-form form {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        .contact-form label {
+        margin-top: 10px;
+        display: block;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form select {
+        border: none;
+        border-bottom: 1.5px solid black;
+        padding: 5px 3px;
+        width: 100%;
+        background: transparent;
+        margin-top: 3px;
+        
+        }
+        
+        .contact-form input:focus,
+        .contact-form select:focus {
+        outline: none;
+        border-bottom: 1.5px solid #007bff;
+        }
+        
+        .contact-form select {
+        background: transparent;
+        }
+        
+        .checkbox-group {
+        margin: 2px 0;
+        display: flex;
+        align-items: center;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+        margin-right: 8px;
+        }
+        .checkbox-group label{
+        margin-top:1px;
+        }
+        .captcha-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-left: 2px;
+        width:280px;
+        height:60px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background-color:whitesmoke;
+        position: relative; 
+        }
+        
+        .captcha-container img {
+        position:relative;
+        left: 90px;
+        top: -6px;
+        transform: translateY(-40%);
+        height: 40px;
+        width: 50px;
+        object-fit: cover;
+         
+        }
+          .captcha-checkmark {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s;
+          }
+        
+          .captcha-checkmark.checked {
+            background-color: #28a745;
+            border-color: #28a745;
+          }
+        
+          .captcha-checkmark.checked::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 12px;
+            border:  1px solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            left: 7px;
+            top: 2px;
+          }
+        
+          .captcha-text {
+            color: #333;
+            margin-left:10px;
+           
+           
+          }
+        
+          button {
+            width: 100%;
+            background-color: #0076c0;
+            color: white;
+            border: none;
+            padding: 12px;   
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+           
+          }
+        
+          .contact-form p{
+           
+            margin-top: 15px;
+            color: #555;
+          }
+          
+        
+          button:hover {
+            background-color: #005b9e;
+          }
+          .captcha-container img {
+        width: 20px;
+        height: auto; 
+        padding-right: 1px;
+        }
+        .privacy-terms {
+        position: absolute;
+        bottom: 5px;
+        top: 40px;
+        left: 200px;
+        line-height: 1.4;
+        }
+        .privacy-terms a {
+        color: #0076c0;
+        text-decoration: none;
+        }
+        .privacy-terms a:hover {
+        text-decoration: underline;
+        }
+        .recaptcha-text {
+        position: absolute;
+        bottom: 25px;
+        left: 210px; 
+        
+        }
+        @media (max-width: 400px) {
+          
+        
+        .contact-form p{
+          
+          padding-top: 10px; 
+        }
+        
+        .captcha-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        .privacy-terms {
+          text-align: left;
+        }
+        
+        }  
+
+</style>
+</head>
+<div class="contact-form">
+    <h2 class="US24T200">Contact Us</h2>
+    <form>
+      <label for="first-name" class="US12B200">First Name*</label>
+      <input type="text" id="first-name" name="first-name"  required>
+  
+      <label for="last-name" class="US12B200">Last Name*</label>
+      <input type="text" id="last-name" name="last-name" required>
+  
+      <label for="title" class="US12B200">Title*</label>
+      <select id="title" name="title" required  class="US12B200">
+        <option value="">Select...</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem ipsum dolor.</option>
+      </select>
+  
+      <label for="email"class="US12B200">Company Email*</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="phone"class="US12B200">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+  
+      <label for="company"class="US12B200">Company*</label>
+      <input type="text" id="company" name="company" required>
+  
+      <label for="industry"class="US12B200">Industry*</label>
+      <select id="industry" name="industry" required class="US12B200">
+        <option value="">Select...</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem ipsum dolor.</option>
+      </select>
+  
+      <label for="revenue"class="US12B200">Company Annual Revenue*</label>
+      <select  id="revenue" name="revenue" required   class="US12B200">
+        <option value="" >Select...</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum.</option>
+        <option value="">Lorem ipsum dolor.</option>
+      </select>
+  
+  
+        <p class="US12I100">By checking the box below I consent to JPMorgan Chase using the information I have provided to send me.</p>
+  
+        <div class="checkbox-group US12B200">
+          <input type="checkbox" id="more-info">
+          <label for="more-info"class="US14N300">More information and promotional messages from JPMorgan Chase</label>
+         
+        </div>
+        <p class="US12I100">Learn more about our data practices in our privacy policy.</p>
+        <div class="captcha-container US12B200" id="captchaBox">
+          <div class="captcha-checkmark" id="checkmark"></div>
+          <span class="captcha-text  ">I'm not a robot</span>
+          <img src="icons8-captcha-58.png" alt="CAPTCHA Image" style="width: 30px; height: auto;">
+  
+          <div class="recaptcha-text  US12B200">reCAPTCHA</div>
+          <p class="privacy-terms"> <a href="#">Privacy</a>|<a href="#">Terms</a>.</p>
+        </div>
+  
+        <button type="submit">SUBMIT</button>
+
+        <script>
+            
+document.addEventListener("DOMContentLoaded", function () {
+  const captchaBox = document.querySelector(".captcha-checkmark");
+
+  if (captchaBox) {
+      captchaBox.addEventListener("click", function () {
+          this.classList.toggle("checked");
+
+          // Manually update background to green when checked
+          if (this.classList.contains("checked")) {
+              this.style.backgroundColor = "#28a745"; // Green background
+              this.style.borderColor = "#000"; // Black border
+          } else {
+              this.style.backgroundColor = ""; // Reset background
+              this.style.borderColor = "#ddd"; // Default border
+          }
+      });
+  }
+});
+
+        </script>
+        
+      </form>
+    </div>
+
+  

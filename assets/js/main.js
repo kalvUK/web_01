@@ -78,3 +78,11 @@ if (imageGallery && progressBarGallery) {
         progressBarGallery.style.width = `${scrollProgress}%`;
     });
 }
+const scrollContainer = document.getElementById("scrollContainer");
+        
+        
+        scrollContainer.addEventListener("scroll", () => {
+            let scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            let scrollLeft = scrollContainer.scrollLeft;
+            let widthPercentage = (scrollLeft / scrollWidth) * 100;
+            progressBar.style.width = widthPercentage + "%"; });

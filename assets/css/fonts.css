@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;700&display=swap');
 
-.ME14L500 {
-  font-family: "Merriweather";
-  font-weight: 500;
-  font-size: 18px;
-}
-
 .ME18B300 {
   font-family: "Merriweather";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 .US24L100{
   font-family: 'Ubuntu Sans';
@@ -37,7 +31,7 @@
 }
 .US14B300{
   font-family: 'Ubuntu Sans';
-  font-weight: 300; /* Bold */
+  font-weight: 300; 
   font-size: 14px;
  
 }

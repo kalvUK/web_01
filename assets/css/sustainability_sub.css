@@ -1,9 +1,7 @@
 body {
-     
     color: #1d3557;
     text-align: center;
     padding: 20px;
-    
     background-color: #f5f5f5;
   }
 
@@ -31,17 +29,14 @@ body {
   }
 
   .hero-content h1 {
-    font-size: 3rem;
     margin: 0;
   }
 
   .hero-content p {
-    font-size: 1.2rem;
     margin: 0.5rem 0 0;
   }
 
   .intro {
-   
     line-height: 1.8;
     margin: 40px auto;
     text-align: center;
@@ -50,22 +45,15 @@ body {
 
   
   .container {
-   
     margin: 0 auto;
-    
     line-height: 30px;
     padding: 40px 300px;
-   
     text-align: left;
-  
   }
   .container h1 {
-    
     color: #000;
   }
-  
   .container  ul {
-    
     padding-left: 20px;
   }
   
@@ -73,10 +61,7 @@ body {
       .container{
           width: 100%;
           padding: 0%;
-      
       }
-  
-  
   }
   .policy-wrapper {
     max-width: 850px;
@@ -85,12 +70,10 @@ body {
     text-align: left;
   }
   .policy-header {
-    
     color: #111;
     margin-bottom: 15px;
   }
   .policy-content p {
-   
     line-height: 1.7;
   }
   .document-block {
@@ -108,9 +91,11 @@ body {
     background-color: #001f4d;
     color: #fff;
     padding: 10px 30px;
-    
     border-radius: 5px;
     cursor: pointer;
+  }
+  .download-btn:hover{
+    background-color: #FD4192;
   }
   @media (max-width: 768px) {
       .policy-wrapper{
@@ -268,6 +253,7 @@ margin: 60px 0;
    }
   .grid {
     display: grid;
+    padding-bottom: 90px;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 130px;
     justify-items: center;
@@ -304,7 +290,7 @@ margin: 60px 0;
   .button4 {
       margin-right: 50px;
     padding: 10px 20px; 
-    color: black; background-color: white; border-radius: 8px;
+    color:white; background-color: #00009c; border-radius: 8px;
     text-decoration: none; transition: 0.3s;
   }
-  .button4:hover { background-color: #e0e0e0; }
+  .button4:hover { background-color:#FD4192; color: #000; }

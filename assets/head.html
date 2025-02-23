@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu with Click</title>
+    <link rel="stylesheet" href="../assets/css/head.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+</head>
+<body>    
+    <div class=logo-section>
+    <div class="logo">
+        <img src="../assets/images/logo_web_noBG.svg" alt="kalv_Logo">
+      </div>
+    </div>
+   
+    <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+    <div class="menu-container">
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-company')">Company
+            <div class="dropdown" id="dropdown-company">
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">About us</a>
+                    <a href="#" class="US14N300">Our Values</a>
+                    <a href="#" class="US14N300">Sustainability</a>
+                    <a href="#" class="US14N300">Documents</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We develop and deliver complex power and propulsion solutions for safety-critical applications.</p>
+                    <div class="button-container">
+                        <a href="#" style="text-decoration: none; color: inherit;" class="button US14N300" >
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">COMPANY</span> <span class="arrow">➤</span>
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-sectors')">Sectors
+            <div class="dropdown" id="dropdown-sectors">
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">Startups & Businesses</a>
+                    <a href="#" class="US14N300">Engineering</a>
+                    <a href="#" class="US14N300">Health & Care</a>
+                    <a href="#" class="US14N300">Software & IT</a>
+                    <a href="#" class="US14N300">Manufacturing, Logistics & Retail</a>
+                    <a href="#" class="US14N300">Education</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We provide innovative solutions across multiple sectors to drive efficiency and sustainability.</p>
+                    <div class="button-container">
+                        <a href="#" style="text-decoration: none; color: inherit;" class="button US14N300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">SECTORS</span> <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-solutions')">Solutions
+            <div class="dropdown" id="dropdown-solutions">
+                <div class="dropdown-links">
+                    <a href="../solutions/engineering.html" class="US14N300">Engineering Solutions</a>
+                    <a href="../solutions/engineering.html" class="US14N300">Software & IT Solutions</a>
+                    <a href="../solutions/engineering/engineering-design-development.html" class="US14N300">HR Solutions</a>
+                    <a href="#" class="US14N300">Recruitment Solutions</a>
+                    <a href="#" class="US14N300">Education Solutions</a>
+                    <a href="#" class="US14N300">Procurement Solutions</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We provide innovative solutions across multiple sectors to drive efficiency and sustainability.</p>
+                    <div class="button-container">
+                        <a href="../solutions/solutions.html"style="text-decoration: none; color: inherit;" class="button US14N300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">SOLUTIONS</span>
+                             <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-insight')">Insight
+            <div class="dropdown" id="dropdown-insight">
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">Case Studies</a>
+                    <a href="#" class="US14N300">Customer Stories</a>
+                    <a href="#" class="US14N300">Employee Stories</a>
+                    <a href="#" class="US14N300">Podcasts</a>
+                    <a href="#" class="US14N300">Streams</a>
+                  
+                </div>
+                <div class="content">
+                    <p class="US14N300">We develop and deliver complex power and propulsion solutions for safety-critical applications.</p>
+                    <div class="button-container">
+                        <a href="#" class="button US14300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">INSIGHT</span>
+                             <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extra-links ">
+        <div class="menu-item ME16N700">Media
+          <a href="#" ></a>
+        </div>
+        <div class="menu-item ME16N700">Careers
+            <a href="#"></a>
+          
+        </div>
+      </div>
+      <div class="icons">
+        <span>🔍</span>
+        <span>🌍</span>
+      </div>
+      
+    
+    <script src="../assets/js/head.js"></script>
+    
+</body>
+</html>   
+</head>
+

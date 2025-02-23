@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;700&display=swap');
+
+.ME18B300 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 14px;
+}
+.US24L100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 14px;
+  
+}
+
+.US12B100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100;
+  font-size: 12px;
+}
+.US12B200{
+  font-family: 'Ubuntu Sans';
+  font-weight: 200; /* Bold */
+  font-size: 12px;
+  
+}
+.US14B200{
+  font-family: 'Ubuntu Sans';
+  font-weight: 200; /* Bold */
+  font-size: 14px;
+  
+}
+.US14B300{
+  font-family: 'Ubuntu Sans';
+  font-weight: 300; 
+  font-size: 14px;
+ 
+}
+.US14B400{
+  font-family: 'Ubuntu Sans';
+  font-weight: 400; /* Bold */
+  font-size: 14px;
+ 
+}
+.US14B500{
+  font-family: 'Ubuntu Sans';
+  font-weight: 500; /* Bold */
+  font-size: 14px;
+  
+}
+
+ .US14B600{
+  font-family: 'Ubuntu Sans';
+  font-weight: 600; /* Bold */
+  font-size: 14px;
+ }
+
+ .US20B600{
+  font-family: 'Ubuntu Sans';
+  font-weight: 600; /* Bold */
+  font-size: 20px;
+ }
+
+ .US18B100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 18px;
+  
+}
+.US16B100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 16px;
+  
+}
+
+.US64B500{
+  font-family: 'Ubuntu Sans';
+  font-weight: 500; 
+  font-size: 64px;
+  
+}
+.US40L100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 40px;
+ 
+  
+}
+.US12N100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 12px;
+  font-style:normal;
+
+}
+.US14N200{
+  font-family: 'Ubuntu Sans';
+  font-weight: 200; 
+  font-size: 14px;
+  font-style:normal;
+
+}
+.US14N400{
+  font-family: 'Ubuntu Sans';
+  font-weight: 400; 
+  font-size: 14px;
+  font-style:normal;
+
+}
+.US18T100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 18px;
+ 
+
+}
+.US24T200{
+  font-family: 'Ubuntu Sans';
+  font-weight: 200; 
+  font-size: 24px;
+ 
+
+}
+.US12I100{
+  font-family: 'Ubuntu Sans';
+  font-weight: 100; 
+  font-size: 12px;
+  font-style:italic;
+  
+}
+

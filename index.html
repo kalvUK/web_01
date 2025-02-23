@@ -4,131 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Footer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
 </head>
-<body>
-    <header class="header1">
-      <div class="logo-section">
-        <div class="logo">
-          <img src="assets/images/logo_web_noBG.svg" alt="kalv_Logo">
-        </div>
-        <div class="logo-text">
-          <div class="menu-item">Company
-            <div class="dropdown">
-              <a href="#">About us</a>
-              <a href="#">Our Values</a>
-              <a href="#">Sustainability</a>
-              <a href="#">Documents</a>
-            </div>
-          </div>
-          <div class="menu-item">Sectors
-            <div class="dropdown">
-              <a href="#">Startups & Businesses</a>
-              <a href="#">Engineering</a>
-              <a href="#">Health & Care</a>
-              <a href="#">Software & IT</a>
-              <a href="#">Manufacturing, Logistics & Retail</a>
-              <a href="#">Education</a>
-            </div>
-          </div>
-          <div class="menu-item">Solutions
-            <div class="dropdown">
-              <a href="solutions/solutions.html">Engineering Solutions</a>
-              <a href="solutions/engineering.html">Software & IT Solutions</a>
-              <a href="solutions/engineering/engineering-design-development.html">HR Solutions</a>
-              <a href="#">Recruitment Solutions</a>
-              <a href="#">Education Solutions</a>
-              <a href="#">Procurement Solutions</a>
-            </div>
-          </div>
-          <div class="menu-item">Insights
-            <div class="dropdown">
-              <a href="#">Case Studies</a>
-              <a href="#">Customer Stories</a>
-              <a href="#">Employee Stories</a>
-              <a href="#">Podcasts</a>
-              <a href="#">Streams</a>
-            </div>
-          </div>
-        </div>
+<body>  
+  <div class=logo-section>
+    <div class="logo">
+        <img src="../web_01/assets/images/logo_web_noBG.svg" alt="kalv_Logo">
       </div>
-      <div class="extra-links">
-        <div class="menu-item">Newsroom
-          <div class="dropdown">
-            <a href="#">Press Releases</a>
-            <a href="#">Events</a>
+    </div>   
+    <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+    <div class="menu-container">
+       
+        
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-company')">Company
+            <div class="dropdown" id="dropdown-company">
+                
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">About us</a>
+                    <a href="#" class="US14N300">Our Values</a>
+                    <a href="#" class="US14N300">Sustainability</a>
+                    <a href="#" class="US14N300">Documents</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We develop and deliver complex power and propulsion solutions for safety-critical applications.</p>
+                    <div class="button-container">
+                        <a href="#" style="text-decoration: none; color: inherit;" class="button US14N300" >
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">COMPANY</span> <span class="arrow">➤</span>
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-sectors')">Sectors
+            <div class="dropdown" id="dropdown-sectors">
+                
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">Startups & Businesses</a>
+                    <a href="#" class="US14N300">Engineering</a>
+                    <a href="#" class="US14N300">Health & Care</a>
+                    <a href="#" class="US14N300">Software & IT</a>
+                    <a href="#" class="US14N300">Manufacturing, Logistics & Retail</a>
+                    <a href="#" class="US14N300">Education</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We provide innovative solutions across multiple sectors to drive efficiency and sustainability.</p>
+                    <div class="button-container">
+                        <a href="#" style="text-decoration: none; color: inherit;" class="button US14N300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">SECTORS</span> <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ME16N700" onclick="window.location.href='../web_01/solutions/solutions.html'">
+            Solutions
+        
+        
+            <div class="dropdown" id="dropdown-solutions">
+                
+                <div class="dropdown-links">
+                    <a href="../web_01/solutions/engineering.html" class="US14N300">Engineering Solutions</a>
+                    <a href="../web_01/solutions/engineering.html" class="US14N300">Software & IT Solutions</a>
+                    <a href="../solutions/engineering/engineering-design-development.html" class="US14N300">HR Solutions</a>
+                    <a href="#" class="US14N300">Recruitment Solutions</a>
+                    <a href="#" class="US14N300">Education Solutions</a>
+                    <a href="#" class="US14N300">Procurement Solutions</a>
+                </div>
+                <div class="content">
+                    <p class="US14N300">We provide innovative solutions across multiple sectors to drive efficiency and sustainability.</p>
+                    <div class="button-container">
+                        <a href="../solutions/solutions.html"style="text-decoration: none; color: inherit;" class="button US14N300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">SOLUTIONS</span>
+                             <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
           </div>
         </div>
-        <div class="menu-item">Careers
-          <div class="dropdown">
-            <a href="#">Job Openings</a>
-            <a href="#">Internships</a>
-          </div>
+        <div class="menu-item ME16N700" onclick="toggleDropdown('dropdown-insight')">Insight
+            <div class="dropdown" id="dropdown-insight">
+               
+                <div class="dropdown-links">
+                    <a href="#" class="US14N300">Case Studies</a>
+                    <a href="#" class="US14N300">Customer Stories</a>
+                    <a href="#" class="US14N300">Employee Stories</a>
+                    <a href="#" class="US14N300">Podcasts</a>
+                    <a href="#" class="US14N300">Streams</a>                  
+                </div>
+                <div class="content">
+                    <p class="US14N300">We develop and deliver complex power and propulsion solutions for safety-critical applications.</p>
+                    <div class="button-container">
+                        <a href="#" class="button US14300">
+                            <span class="US14N300" style="text-decoration: none; color: inherit;">INSIGHT</span>
+                             <span class="arrow">➤</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extra-links ">
+        <div class="menu-item ME16N700">Media
+          <a href="#" ></a>
+        </div>
+        <div class="menu-item ME16N700">Careers
+            <a href="#"></a>
+          
         </div>
       </div>
       <div class="icons">
         <span>🔍</span>
         <span>🌍</span>
       </div>
-      <div class="menu-icon" onclick="toggleMobileMenu()">☰</div>
-    </header>
+      
   
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-      <div class="close-btn" onclick="toggleMobileMenu()">×</div>
-      <div class="menu-item">Company
-        <div class="dropdown">
-          <a href="#">About Us</a>
-          <a href="#">Our Values</a>
-          <a href="#">Sustainability</a>
-          <a href="#">Documents</a>
-        </div>
-      </div>
-      <div class="menu-item">Sectors
-        <div class="dropdown">
-          <a href="#">Startups & Businesses</a>
-              <a href="#">Engineering</a>
-              <a href="#">Health & Care</a>
-              <a href="#">Software & IT</a>
-              <a href="#">Manufacturing, Logistics & Retail</a>
-              <a href="#">Education</a>
-        </div>
-      </div>
-      <div class="menu-item">Solutions
-        <div class="dropdown">
-              <a href="#">Engineering Solutions</a>
-              <a href="#">Software & IT Solutions</a>
-              <a href="#">HR Solutions</a>
-              <a href="#">Recruitment Solutions</a>
-              <a href="#">Education Solutions</a>
-              <a href="#">Procurement Solutions</a>
-        </div>
-      </div>
-      <div class="menu-item">Insights
-        <div class="dropdown">
-              <a href="#">Case Studies</a>
-              <a href="#">Customer Stories</a>
-              <a href="#">Employee Stories</a>
-              <a href="#">Podcasts</a>
-              <a href="#">Streams</a>
-        </div>
-      </div>
-      <div class="menu-item">Newsroom
-        <div class="dropdown">
-          <a href="#">Press Releases</a>
-          <a href="#">Events</a>
-        </div>
-      </div>
-      <div class="menu-item">Careers
-        <div class="dropdown">
-          <a href="#">Job Openings</a>
-          <a href="#">Internships</a>
-        </div>
-      </div>
-    </div>
     <div class="statement aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic">
         Constructive Solutions towards Focussed Performance
       </div>
@@ -389,60 +383,7 @@
             </div>
         </div>
     </div>
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-section">
-      <h4 style="padding-bottom: 10px;">Contact</h4>
-      <hr style="width: 7cm; padding-bottom: 20px;">
-      <h4 style="padding-bottom: 10px;">Locations</h4>
-      <hr style="width: 7cm; padding-bottom: 20px;">
-    </div>
-
-    <div class="footer-section helpful-links">
-      <h4>Helpful Links</h4>
-      <ul>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem, ipsum</a></li>
-        <li><a href="#">Lorem, ipsum</a></li>
-        <li><a href="#">Lorem, ipsum dolor</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section share-price">
-      <h4>Share Price</h4>
-      <p class="price">275.40 <span>CHF</span></p>
-      <p class="price-change">+1.00 (+0.36%) Today</p>
-    </div>
-  </div>
-
-  <div class="social-icons">
-    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-linkedin-48.png" alt="LinkedIn"></a>
-    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-facebook-48.png" alt="Facebook"></a>
-    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-twitter-30.png" alt="X"></a>
-    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-instagram-48.png" alt="Instagram"></a>
-    <a href="#"><img src="C:\Users\Thulasi\Downloads\icons8-youtube-48.png" alt="YouTube"></a>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 F. Hoffmann-La Roche Ltd 1/24/2025</p>
-    <ul>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Legal Statement</a></li>
-      <li><a href="#">Accessibility Statement</a></li>
-      <li><a href="#">Cookies</a></li>
-    </ul>
-  </div>
-
-  <p class="disclaimer">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam, voluptatem quam cum vitae sint ut 
-    voluptates atque. Odit possimus magni itaque modi quidem non at officiis, omnis, minima incidunt repellat enim 
-    adipisci velit. Asperiores ipsum mollitia assumenda perspiciatis consequuntur atque reprehenderit itaque quis sunt 
-    incidunt. Asperiores soluta omnis pariatur laboriosam blanditiis ut laudantium, est corrupti accusamus illo veniam.
-  </p>
-</footer>
-<script src="main.js"></script>
-
+<script src="./assets/js/main.js"></script>
+<iframe src="../web_01/assets/foot.html" width="100%" height="600px" scrolling="no"style="border:none"></iframe>
 </body>
 </html>
